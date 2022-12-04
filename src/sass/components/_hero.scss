@@ -1,0 +1,19 @@
+.hero {
+    position: relative;
+    height: 51rem;
+    overflow: hidden;
+    &__img {
+        position: absolute;
+        top: -33%;
+        left: 0;
+        right: 0;
+    }
+    &__text {
+        position: absolute;
+        bottom: 4rem;
+        left: 2rem;
+        font-size: 5rem;
+        color: #fff;
+        width: 50rem;
+    }
+}

@@ -1,0 +1,25 @@
+.orderItem {
+    position: relative;
+    width: 10rem;
+    text-align: center;
+    &:hover {
+        .orderItem__img {
+            opacity: .5;
+        }
+        .icon--delete--orderItem {
+            opacity: 1;
+        }
+    }
+    &__img {
+        margin-bottom: .5rem;
+        height: 12rem;
+        display: flex;
+        align-items: center;
+        img {
+            height: 12rem;
+        }
+    }
+    &__price {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,14 @@
+.orderConfirmation {
+    padding: 2rem;
+    &__orders {
+        border-bottom: .1rem solid #E4E4E7;
+        padding: 0 0 1rem 0;
+        &__title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &__form {
+        padding: 1rem 0;
+    }
+}

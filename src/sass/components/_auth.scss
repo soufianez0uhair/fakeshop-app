@@ -1,0 +1,16 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    min-height: calc(100vh - 14.9rem);
+    &__input {
+        padding: .5rem 1rem;
+    }
+    &__error {
+        color: red;
+        font-size: 1.3rem;
+    }
+}

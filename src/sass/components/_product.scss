@@ -1,0 +1,39 @@
+.product {
+    position: relative;
+    cursor: pointer;
+    &__img {
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: #fff;
+        &:hover {
+            img {
+                transform: scale(1.3);
+            }
+        }
+        img {
+            width: 15rem;
+            transition: transform .3s ease-in;
+        }
+    }
+    &__details {
+        padding-top: .75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__price {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}

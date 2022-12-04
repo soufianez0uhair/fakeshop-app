@@ -1,0 +1,37 @@
+.btn {
+    &--addToCart {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    &--addToCart, &--order {
+        background: #18181b;
+        padding: 1rem;
+        width: max-content;
+        color: #fff;
+        border: .1rem solid #18181b;
+        &:hover {
+            color: #18181b;
+            background: none;
+        }
+    }
+    &--auth {
+        background: #000;
+        color: #fff;
+        padding: .5rem;
+    }
+    &--orderConfirmation {
+        font-size: 1.5rem;
+        background: #18181b;
+        color: #fff;
+        padding: .5rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        border: .1rem solid #18181b;
+        &:hover {
+            color: #18181b;
+            background: none;
+        }
+    }
+}
