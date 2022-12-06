@@ -24,7 +24,7 @@ const Menu = () => {
                 <Link to="/" className="menu__link" >Home</Link>
                 {
                     categories.map(category => (
-                        <Link key={category} className="menu__link">{category}</Link>
+                        <Link to={`/${category}`} key={category} className="menu__link">{category}</Link>
                     ))
                 }
             </div>

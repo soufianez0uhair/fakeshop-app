@@ -1,11 +1,17 @@
 .cartItem {
     display: grid;
-    grid-template-columns: 20rem 1fr 20rem;
-    width: 80rem;
+    grid-template-columns: 20rem minmax(20rem, 55rem) 5rem;
+    max-width: 80rem;
+    margin-left: auto;
+    @include breakpoints($mobile) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-left: 0;
+        gap: 1rem;
+    }
     &__img {
         display: flex;
         align-items: start;
-        height: 30rem;
         img {
             width: 15rem;
         }

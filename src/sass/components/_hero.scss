@@ -2,18 +2,32 @@
     position: relative;
     height: 51rem;
     overflow: hidden;
+    @include breakpoints($tablet) {
+        margin-top: 8.26rem;
+    }
+    @include breakpoints($mobile) {
+        height: 40rem;
+    }
     &__img {
         position: absolute;
-        top: -33%;
+        height: 100%;
+        top: 0;
         left: 0;
         right: 0;
+        img {
+            object-fit: cover;
+        }
     }
     &__text {
         position: absolute;
         bottom: 4rem;
         left: 2rem;
-        font-size: 5rem;
+        font-size: 7rem;
         color: #fff;
         width: 50rem;
+        @include breakpoints($mobile) {
+            font-size: 4rem;
+            width: 30rem;
+        }
     }
 }

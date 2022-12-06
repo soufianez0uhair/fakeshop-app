@@ -17,7 +17,9 @@ const Hero = ({text, bgImgs}) => {
 
     return (
         <div className="hero">
+            <div className="hero__img">
             <img src={bgImgs[imgIndex]} key={imgIndex} alt="hero img" className="hero__img" />
+            </div>
             <h2 className="hero__text">{text}</h2>
         </div>
     )

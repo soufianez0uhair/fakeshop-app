@@ -11,6 +11,7 @@ import ProductPage from './pages/ProductPage';
 import Auth from './pages/Auth';
 import OrderConfirmation from './pages/OrderConfirmation';
 import AdminDashboard from './pages/AdminDashboard';
+import Category from './pages/Category';
 
 const App = () => {
   const cart = useSelector(selectCart);
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/auth" element={!user ? <Auth /> : <Navigate to="/" />} />
           <Route path="/orderconfirmation" element={cart ? <OrderConfirmation /> : <Navigate to="/" />} />
           <Route path="/dashboard" element={user ? <AdminDashboard /> : <Navigate to="/" />} />
+          <Route path="/:category" element={<Category />} />
         </Routes>
       </main>
     </Router>

@@ -108,7 +108,7 @@ const OrderForm = ({setIsOrder}) => {
                 </div>
             </div>
             <div className="orderForm__confirmOrder">
-                <h3 className="orderForm__total">{total}$</h3>
+                <h3 className="orderForm__total">{total.toFixed(2)}$</h3>
                 <button className="btn btn--orderConfirmation"><BiShoppingBag className="icon icon--shoppingBag" /> Confirm Order</button>
                 {error && <span className="orderForm__error">{error}</span> }
             </div>
